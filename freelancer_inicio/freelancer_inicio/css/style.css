@@ -1,0 +1,39 @@
+/*1 rem = 10px*/
+/*Color palette*/
+:root{
+    --aliceBlue: #E8EEF2;
+    --paleSilver:#D6C9C9;
+    --beauBlue: #C7D3DD;
+    --aero: #77B6EA;
+    --onyx: #37393A;
+    --fuentePrincipal: 3.8 rem;
+    
+}
+html {
+    font-size: var(--fuentePrincipal);
+}
+body {
+    font-size: 16px;
+    background-color: var(--aliceBlue);
+    font-family: 'Raleway', sans-serif;
+}
+
+.navegacion-principal{
+    
+    
+}
+.nav-bg{
+    background-color: var(--aero);
+}
+
+.contenedor{
+    width:120rem;
+ /* margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; Este es el orden para leer los valores de margin (clock)
+    También se puede:
+    margin: 0 auto y así le aplica todos los cambios a las 4 posiciones en el mismo orden;*/
+    margin: 0 auto 0 auto;
+    
+}
