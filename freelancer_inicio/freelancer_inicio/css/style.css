@@ -12,6 +12,12 @@
 html {
     font-size: var(--fuentePrincipal);
 }
+.web-title{
+    font-size: 15px;
+}
+header h1{
+    text-align: center;
+}
 body {
     font-size: 16px;
     background-color: var(--aliceBlue);
@@ -19,11 +25,20 @@ body {
 }
 
 .navegacion-principal{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
     
-    
+}
+
+.navegacion-principal a {
+    color: var(--onyx);
+    text-decoration: none;
+    font-weight: bold;
 }
 .nav-bg{
     background-color: var(--aero);
+    
 }
 
 .contenedor{
