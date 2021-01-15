@@ -6,6 +6,7 @@
     --beauBlue: #C7D3DD;
     --aero: #77B6EA;
     --onyx: #37393A;
+    --grisClaro: #DFE9F3
     --fuentePrincipal: 3.8 rem;
     
 }
@@ -18,19 +19,30 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
   }
+  h1{
+    font-size: 3.8 rem;
+  }
+  h2{
+    font-size: 2.8 rem;
+  }
+  h3{
+    font-size: 1.8 rem;
+  }
+  h1,h2,h3{
+    text-align: center;
+
+  }
 .web-title{
     font-size: 15px;
 }
-header h1{
-    text-align: center;
-}
-section h1{
-    text-align: center;
-}
+
+
 body {
     font-size: 16px;
     background-color: var(--aliceBlue);
     font-family: 'Raleway', sans-serif;
+    /*Gradient for background*/
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(#E8EEF2) 100%);
 }
 
 .navegacion-principal{
@@ -82,16 +94,21 @@ body {
     align-items: center;
     
 }
+.contenido-hero h2, 
+.contenido-hero p{
+
+    color: var();
+}
 
 .contenedor{
-    max-width:120rem;
+    max-width:1200px;
  /* margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto; Este es el orden para leer los valores de margin (clock)
     También se puede:
     margin: 0 auto y así le aplica todos los cambios a las 4 posiciones en el mismo orden;*/
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     
 }
 /*MediaQuery
@@ -101,5 +118,28 @@ body {
     }
      
 }
-
 */
+.ubicacion{
+    display:flex;
+    align-items: center;
+}
+
+.boton{
+    background-color: var(--aero);
+    color: var(--aliceBlue);
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    width:90%;
+    text-align:center;
+}
+@media (min-width: 768px) {
+    .boton{
+        width:auto;
+    }
+     
+}
