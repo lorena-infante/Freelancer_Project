@@ -77,6 +77,9 @@ body {
        
        /*Same of above but simpler: repeat(number of times you want to be repeated, number of fr you want)*/
        grid-template-columns: repeat(3,1fr);
+
+       /*espaciado dentro de la columna*/
+       column-gap: 5rem;
     }
 }
 
