@@ -19,6 +19,15 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
   }
+  /*CSS MATIC*/
+  .sombra{
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.51);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.51);
+    background-color:  var(--beauBlue);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
   h1{
     font-size: 3.8 rem;
   }
@@ -52,6 +61,27 @@ body {
     align-items: center;
     
 }
+
+/*Servicios*/
+@media (min-width: 768px) {
+    .servicios{
+        display:grid;
+    /*  grid-template-columns: 300px 300px;
+        grid-template-rows: 200px 800px;*/
+        /*Simpler way to call grid: row Height row Width / col Height col Width*/
+       /* grid: 200px 200px / 300px 300px;*/
+    
+       /*Using fractions (1 fraction that is divided into parallel parts throughout the 100% of the space selected)
+        grid-template-columns: 1fr 1fr 1fr;
+       */
+       
+       /*Same of above but simpler: repeat(number of times you want to be repeated, number of fr you want)*/
+       grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+
 /*MediaQuery para converit en columna en teléfono el menu. Las propiedades del padre se heredan*/
 @media (min-width: 480px) {
     .navegacion-principal{
@@ -80,6 +110,7 @@ body {
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem; 
 }
 
 .contenido-hero{
