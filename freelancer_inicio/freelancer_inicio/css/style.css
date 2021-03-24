@@ -6,8 +6,15 @@
     --beauBlue: #C7D3DD;
     --aero: #77B6EA;
     --onyx: #37393A;
-    --grisClaro: #DFE9F3
+    --grisClaro: #DFE9F3;
+    /*Another palette*/
+    --royalBlueDark:#0A2463;
+    --redSalsa: #fb3640;
+    --davysGray: #605f5e;
+    --celadonBlue: #247ba0;
+    --platinum:#e2e2e2;
     --fuentePrincipal: 3.8 rem;
+    
     
 }
 html {
@@ -79,7 +86,7 @@ body {
        grid-template-columns: repeat(3,1fr);
 
        /*espaciado dentro de la columna*/
-       column-gap: 5rem;
+       column-gap: 1rem;
     }
 }
 
@@ -176,4 +183,31 @@ body {
         width:auto;
     }
      
+}
+
+.servicio{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.servicio h3{
+    color: var(--royalBlueDark);
+    font-weight: normal;
+}
+
+.servicio .iconos{
+    height:10rem;
+    width:10rem;
+    background-color: var(--celadonBlue);
+    border-radius: 80%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicio p {
+/*Interlineado*/
+    line-height: 2;
+    text-align: center;
 }
