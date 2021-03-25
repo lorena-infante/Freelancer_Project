@@ -211,3 +211,26 @@ align-items: center;
     line-height: 2;
     text-align: center;
 }
+
+/*Formulario contacto*/
+
+.formulario{
+    background-color: var(--celadonBlue);
+    width:min(60rem,100%); /*Toma el valor mínino entre los dos parámetros, ahorra mediaQueries porque se adapta al tamaño de pantalla utilizado*/
+    margin: 0 auto; /*margin 0 auto. para centrar horizontalmente. Utilizado en elementos cuyo padre NO es un display flex y sea un bloque.Se pone Justify-content cuando el padre SÍ sea un display flex*/
+    padding:2rem;
+    border-radius:1rem;
+}
+
+.formulario fieldset{
+    border:none;
+}
+
+.formulario legend{
+    text-align:center;
+    font-size:1.4rem; 
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom:2rem;
+    color: var(--grisClaro);
+}
