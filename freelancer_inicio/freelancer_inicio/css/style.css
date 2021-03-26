@@ -277,8 +277,6 @@ align-items: center;
         grid-column: 1/3; /*Este es el número de columnas que quiero abarcar: desde/hasta */
         /*Se puede modificar wl html sin tocarlo, usando solo css, con grid. Si quisiera que esta row se mostrara en el campo donde está el campo de escribir el mensaje, se debe hacer lo siguiente:
         grid-row: row inicial/row final (en este caso sería grid-row:3/4)*/
-
-
     }
 
 }
